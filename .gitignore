@@ -1,0 +1,23 @@
+# --- scratch work ---------------------------------------------------------
+# Development probes, instrumented engine copies, per-phase measurement
+# harnesses and the build's intermediate/candidate output all live here.
+# Nothing under .localrun/ is required to build, test or run the engine.
+.localrun/
+
+# --- Python caches --------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- vendor material (not project source) ---------------------------------
+# The competition harness, its pinned archive, and the make.fun platform
+# document. The build needs the harness, but it is third-party material and is
+# pinned by archive SHA-256 in RELEASE_MANIFEST.md rather than vendored here.
+# Nothing is deleted: both the extracted tree and the archive stay on disk.
+tiny-chess-01-kit/
+tiny-chess-01-kit.tar.gz
+skill.md
+
+# --- OS / editor noise ----------------------------------------------------
+.DS_Store
+*.swp
